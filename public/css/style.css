@@ -1,0 +1,28 @@
+.well {
+	margin: 30px auto 0;
+	max-width: 650px;
+}
+input[readonly] {
+	cursor: pointer;
+}
+.tabel {
+	margin-top: 20px;
+}
+.table th, .table td {
+	text-align: center;
+}
+.pagination li {
+	cursor: pointer;
+}
+.progress {
+	margin: 0 auto;
+	width: 400px;
+}
+::selection {
+	color: #fff;
+	text-shadow: 1px 1px 1px #fb503b;
+} 
+::-moz-selection {
+	color: #fff;
+	text-shadow: 1px 1px 1px #fb503b;
+}
