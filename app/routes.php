@@ -54,7 +54,7 @@ Route::post('submit', array('before' => 'ajax', 'as' => 'submit', function()
 				// acak short
 				$short = str_random(5);
 				$cek = Data::cek($short);
-			} while ($cek == true);
+			} while (!$cek);
 		}
 
 		// tambah data

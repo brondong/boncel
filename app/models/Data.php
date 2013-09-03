@@ -8,8 +8,8 @@ class Data extends Eloquent {
 
 	public static function cek($short)
 	{
-		$data = Data::where('short', '=', $short);
-		return ($data) ? false : true;
+		$data = Data::where('short', '=', $short)->count();
+		return ($data > 0) ? false : true;
 	}
 
 	public static function tambah($ip, $url, $short)
